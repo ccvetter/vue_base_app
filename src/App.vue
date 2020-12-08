@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Sidebar/>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,6 +8,15 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+  import Sidebar from './components/Sidebar'
+  export default {
+    components: {
+      Sidebar
+    }
+  }
+</script>
 
 <style lang="scss">
 #app {
